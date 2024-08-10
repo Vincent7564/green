@@ -7,8 +7,10 @@ on:
       - main
 
   schedule:
-  - cron: "20 7,9,11,20 * * *" # See https://crontab.guru/#0_7,9,11_*_*_1,3
-
+  - cron: "28 7,9,11,20 * * *" # See https://crontab.guru/#0_7,9,11_*_*_1,3
+permissions:
+  contents: write 
+  pages: write
 jobs:
   auto_commit:
     runs-on: ubuntu-latest
